@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="flecha_izquierda" transform="translate(-4902 -2565)">
+    <rect id="Rectangle_41" data-name="Rectangle 41" width="40" height="40" transform="translate(4902 2565)" fill="none"/>
+    <path id="chevron-left" d="M11.771,16,20.1,7.671a1.556,1.556,0,0,0-2.2-2.2L8.471,14.9a1.519,1.519,0,0,0,0,2.2L17.9,26.529a1.519,1.519,0,0,0,2.2,0,1.519,1.519,0,0,0,0-2.2L11.771,16Z" transform="translate(4907 2569)" fill="#ee2b7b"/>
+  </g>
+</svg>

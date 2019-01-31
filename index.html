@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Comfama</title>
+  <meta charset="UTF-8">
+	  <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+<div class="container-fluid ">
+
+  <h4>Recomendados</h4>
+
+
+  <div class="row">
+
+    <!-- Card 1 -->
+
+    <div class="col s12 m6 l3 center-align">
+      <div class="card" id="card1">
+        <img onclick="transition(1);" src="assets/img/libro1.jpg">
+        <div class="card-content">
+          <div class="title">
+            <h5>Mitos griegos contados Para niños</h5>
+          </div>
+          <div class="text">
+            <p>Por: Sally rooney</p>
+          </div>  
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+
+    <div class="col s12 m6 l3 center-align">
+      <div class="card" id="card2">
+        <img onclick="transition(2);" src="assets/img/libro2.jpg">
+        <div class="card-content">
+          <div class="title">
+            <h5>Lazarillo de tormes</h5>
+          </div>
+          <div class="text">
+            <p>Por: Antonio Garcia Ángel</p>
+          </div>   
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+
+    <div class="col s12 m6 l3 center-align">
+      <div class="card" id="card3">
+        <img onclick="transition(3);" src="assets/img/libro3.jpg">
+        <div class="card-content">
+          <div class="title">
+            <h5>Don quijote de la mancha</h5>
+          </div>
+          <div class="text">
+            <p>Por: Miguel de Cervantes S.</p>
+          </div>       
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+
+    <div class="col s12 m6 l3 center-align">
+      <div class="card" id="card4">
+        <img onclick="transition(4);" src="assets/img/libro4.jpg">
+        <div class="card-content">
+          <div class="title">
+            <h5>Pásion india</h5>
+          </div>
+          <div class="text">
+            <p>Por: Miguel Moro</p>
+          </div>  
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+</div>
+
+
+
+<div class="container section">
+
+  <div class="carrusel">
+
+    <!-- Slide 1 -->
+
+    <div class="element" id="element1">
+
+      <div class="title" id="title1">
+        <h1>Loremp impsum</h1>
+      </div>  
+      <div class="subtitle" id="subtitle1">
+        <h5>Mitos griegos contados para niños</h5>
+      </div>
+      <div class="image" id="image1">
+        <img src="assets/img/book.png">
+      </div>
+      
+    </div>
+
+    <!-- Slide 2 -->
+
+    <div class="element" id="element2">
+
+      <div class="title" id="title2">
+        <h1>Impsum loremp</h1>
+      </div>  
+      <div class="subtitle" id="subtitle2">
+        <h5>Don quijote de la</h5>
+      </div>
+      <div class="image" id="image2">
+        <img src="assets/img/kid.png">
+      </div>
+      
+    </div>
+
+    <!-- Slide 3 -->
+
+    <div class="element" id="element3">
+
+      <div class="title" id="title3">
+        <h1>Loremp impsum</h1>
+      </div>  
+      <div class="subtitle" id="subtitle3">
+        <h5>Mitos griegos contados para niños</h5>
+      </div>
+      <div class="image" id="image3">
+        <img src="assets/img/men.png">
+      </div>
+      
+    </div>
+
+    <!-- Slide 4 -->
+
+    <div class="element" id="element4">
+
+      <div class="title" id="title4">
+        <h1>Impsum loremp</h1>
+      </div>  
+      <div class="subtitle" id="subtitle4">
+        <h5>Don quijote de la</h5>
+      </div>
+      <div class="image" id="image4">
+        <img src="assets/img/family.png">
+      </div>
+      
+    </div>
+
+    <!-- Botones -->
+
+    <div class="action">
+      <button type="button" onclick="action()"><p>Call the action</p></button>
+    </div>
+
+    <div class="displacement">
+      <button type="button" onclick="move(0)"><img src="assets/icons/flecha_izquierda.svg"></button>
+      <button type="button" onclick="move(1)"><img src="assets/icons/flecha_derecha.svg"></button>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+
+<!-- Custom Scripts -->
+<script src="transition.js"></script>
+<script src="initialization.js"></script>
+
+</body>
+
+</html>

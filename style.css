@@ -1,0 +1,360 @@
+
+/*Cards de libros */
+
+.container-fluid {
+	margin: 6%;
+}
+
+.container-fluid h4 {
+	margin-bottom: 10%;
+	font-family: HelveticaRoundedLTStd;
+	color: rgba(88, 90, 92, 1);
+	size: 28px;
+}
+
+.card {
+	border-radius: 10px;
+	box-shadow: none;
+	border: 1px solid rgba(112, 112, 112, 0.35);
+	height: 350px;
+	width: 256px;
+	transition: .6s;
+}
+
+.card-content {
+	position: relative;
+	bottom: 48px;
+	height: 90px;
+}
+
+.card-content .title {
+	position: relative;
+	top: -30px;
+	height: 35px;
+	width: 200px;
+}
+
+.card-content .text {
+	position: relative;
+	top: -25px;
+}
+
+
+.card-content .title h5 {
+	text-align: left;
+	font-size: 16px;
+	font-family: HelveticaNeue;
+	color: rgba(88, 90, 92, 1);
+}
+
+.card-content .text p {
+	text-align: left;
+	font-style: italic;
+	font-family: HelveticaNeueLight;
+	color: rgba(88, 90, 92, 1);
+}
+
+
+.card img {
+	transition: .6s;
+	border-radius: 10px;
+	width: 212px;
+	height: 300px;
+	position: relative;
+    top: -55px;
+    box-shadow: 0px 15px 10px -15px #111; 
+}
+
+/*Carrusel*/
+
+.container.section {
+	width: 1160px;
+	height: 400px;
+	background-color: rgba(241, 241, 241);
+	border-radius: 10px;
+	margin-bottom: 15%;
+}
+
+.carrusel .element {
+	position: absolute;
+	width: 1160px;
+	height: 360px;
+}
+
+.carrusel .element .title {
+	position:  relative;
+	width: 600px;
+	height: 80px;
+	top: 50px;
+	left: 50px;
+}
+
+.carrusel .element .title h1 {
+	font-family: HelveticaRoundedLTStd;
+	color: rgba(238, 43, 123, 1);
+
+}
+
+.carrusel .element .subtitle {
+	position:  relative;
+	width: 600px;
+	height: 70px;
+	top: 50px;
+	left: 50px;
+}
+
+.carrusel .element .subtitle h5 {
+	font-family: HelveticaNeue;
+	color: rgba(88, 90, 92, 1);
+
+
+}
+
+.carrusel .element .image {
+	position: relative;
+	left: 661px;
+	bottom: 222px;
+	width: 400px;	
+	height: 400px;
+	
+}
+
+.carrusel .element .image img{
+	width: 110%;
+	
+}
+
+.carrusel .action {
+	position: relative;
+	top: 250px;
+	left: 50px;
+	width: 220px;
+}
+
+.carrusel .action button {
+	width: 218px;
+	height: 50px;
+	border: none;
+	border-radius: 50px;
+	background-color: rgba(238, 43, 123, 1);
+}
+
+.carrusel .action button p {
+	position: relative;
+	bottom: 10px;
+	font-family: HelveticaRoundedLTStd;
+	font-size: 20px;
+	color: #fff;
+}
+
+.carrusel .displacement {
+	position: relative;
+	top: 310px;
+	left: 1000px;
+	width: 140px;
+	height: 60px;
+}
+
+.carrusel .displacement button {
+	width: 60px;
+	height: 60px;
+	border: none;
+	margin-right: 7px;
+	border-radius: 50px;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 22px 3px rgba(0,0,0,0.24);
+	-moz-box-shadow: 0px 0px 22px 3px rgba(0,0,0,0.24);
+	box-shadow: 0px 0px 22px 3px rgba(0,0,0,0.24);
+}
+
+
+/*Efecto de transicion*/
+
+/*Cards de libros*/
+
+.card-active {
+	-webkit-box-shadow: 0px 7px 14px 3px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 7px 14px 3px rgba(0,0,0,0.2);
+	box-shadow: 0px 7px 14px 3px rgba(0,0,0,0.2);
+}
+
+.card-active img {
+  top: -80px;
+}
+
+/*Carrusel*/
+
+/*.carrusel #element2, #element3, #element4 {
+	opacity: 0;
+}*/
+
+.fadeOut {
+  -webkit-animation: fadeOut 1s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+
+.fadeIn {
+  -webkit-animation: fadeIn 1s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.fadeInText {
+  -webkit-animation: fadeInText 1s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.fadeInImg {
+  -webkit-animation: fadeInImg 1s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeIn {
+
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+
+}
+
+@-webkit-keyframes fadeInText {
+
+	from {
+		left: -20px;
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+
+}
+
+@-webkit-keyframes fadeInImg {
+
+	0% {
+		left: 890px;
+		opacity: 0;
+	}
+
+	40% {
+		opacity: 1;
+		left: 630px;
+	}
+
+	100% {
+	}
+
+}
+
+@-webkit-keyframes fadeOut {
+
+	from {
+		opacity: 1;	
+	}
+
+	to {
+		opacity: 0;
+	}
+
+}
+
+
+/*Fuentes */
+
+@font-face {
+	font-family: HelveticaRoundedLTStd;
+	src: url('assets/fonts/HelveticaRoundedLTStd-Bd.otf') format("opentype");
+}
+
+@font-face {
+    font-family: HelveticaNeue;
+	src: url('assets/fonts/HelveticaNeue-Black.otf') format("opentype");
+}
+
+@font-face {
+    font-family: HelveticaNeueLight;
+	src: url('assets/fonts/HelveticaNeueLight.ttf') format("opentype");
+}
+
+/*Responsive*/
+
+@media only screen and (max-width: 600px){
+
+	.container-fluid h4 {
+		text-align: center;
+		margin-bottom: 20%;
+    }
+
+    .card {
+    	margin-left: auto ;
+    	margin-right: auto ;
+    	margin-bottom: 25%;
+    }
+
+    .container.section {
+    	width: 300px;
+    	height: 500px;
+    }
+	.carrusel .element {
+		width: 300px;
+    	height: 470px;
+	}
+	.carrusel .element .title {
+		width: 240px;
+		left: 30px;
+		top: -38px;
+    	height: 100px;
+	}
+
+	.carrusel .element .title h1{
+		font-size: 40px;
+		text-align: center;
+	}
+	.carrusel .element .subtitle {
+		width: 240px;
+    	height: 60px;
+    	left: 30px;
+    	top: -54px;
+	}
+	.carrusel .element .subtitle h5{
+		font-size: 18px;
+		text-align: center;
+	}
+	.carrusel .element .image {
+		width: 240px;
+    	height: 240px;
+    	top: -60px;
+    	left: 30px;
+	}
+	.carrusel .action {
+		width: 240px;
+		padding: 10px;
+		left: 30px;
+    	height: 70px;
+    	top: 380px;
+	}
+	.carrusel .displacement {
+		width: 145px;
+    	height: 60px;
+    	left: 80px;
+    	top: 390px;
+	}
+}
+
+@media only screen and (max-width: 1000px){
+
+
+    .card {
+    	margin-left: auto ;
+    	margin-right: auto ;
+    	margin-bottom: 30%;
+    }
+
+}
+
+
