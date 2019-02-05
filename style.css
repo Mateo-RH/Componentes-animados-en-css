@@ -1,15 +1,17 @@
 
 /*Cards de libros */
 
-.container-fluid {
+.container {
 	margin: 6%;
+	width: 88%;
 }
 
-.container-fluid h4 {
+
+
+.container h4 {
 	margin-bottom: 10%;
 	font-family: HelveticaRoundedLTStd;
 	color: rgba(88, 90, 92, 1);
-	size: 28px;
 }
 
 .card {
@@ -68,8 +70,8 @@
 /*Carrusel*/
 
 .container.section {
-	width: 1160px;
 	height: 400px;
+	width: 86%;
 	background-color: rgba(241, 241, 241);
 	border-radius: 10px;
 	margin-bottom: 15%;
@@ -77,8 +79,9 @@
 
 .carrusel .element {
 	position: absolute;
-	width: 1160px;
+	width: 85%;
 	height: 360px;
+	/*background-color: orange;*/
 }
 
 .carrusel .element .title {
@@ -87,6 +90,7 @@
 	height: 80px;
 	top: 50px;
 	left: 50px;
+	background-color: orange;
 }
 
 .carrusel .element .title h1 {
@@ -285,7 +289,7 @@
 
 @media only screen and (max-width: 600px){
 
-	.container-fluid h4 {
+	.container h4 {
 		text-align: center;
 		margin-bottom: 20%;
     }

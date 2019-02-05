@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	// Oculto todos los elementos menos el 1 (principal)
 
     var n = 4;
-    
+
     if(n>=2) {
     	for( var i = 2; i <= n; i++ ) {
     		$(`#element${i}`).css("opacity", 0);
@@ -65,11 +65,15 @@ function move( direction ){
 
 	// desaparecer
 	$(`#element${activo}`).removeClass('fadeIn').addClass('fadeOut');
+	$(`#title${activo}`).removeClass('fadeInText');
+	$(`#subtitle${activo}`).removeClass('fadeInText');
+	$(`#image${activo}`).removeClass('fadeInImg');
 
+    // Aparecer
 	$(`#element${activar}`).removeClass('fadeOut').addClass('fadeIn');
-	$(`#title${activar}`).removeClass('fadeOut').addClass('fadeInText');
-	$(`#subtitle${activar}`).removeClass('fadeOut').addClass('fadeInText');
-	$(`#image${activar}`).removeClass('fadeOut').addClass('fadeInImg');
+	$(`#title${activar}`).addClass('fadeInText');
+	$(`#subtitle${activar}`).addClass('fadeInText');
+	$(`#image${activar}`).addClass('fadeInImg');
 
 
 }
